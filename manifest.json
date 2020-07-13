@@ -3,7 +3,7 @@
     "short_name": "ASBL",
     "start_url": ".",
     "background_color": "#6dcdb1",
-    "theme_color": "#00985578",
+    "theme_color": "#985578",
     "display": "standalone",
     "icons": [
         {
