@@ -1,0 +1,19 @@
+importScripts('sw-toolbox.js')
+toolbox.precache([
+    'index.html',
+    '/assets/css/main.css',
+    '/images/banner.jpg',
+    '/images/branche.jpg',
+    '/images/carnaval.jpg',
+    '/images/membres.jpg',
+    '/images/nenu.jpg',
+    '/images/pic01.jpg',
+    '/images/pic02.jpg',
+    '/images/pic03.jpg',
+    '/images/pic04.jpg',
+    '/images/pic05.jpg',
+    '/images/sport1.jpg',
+    '/images/sport2.jpg',
+    '/images/sport3.jpg',
+]);
+toolbox.router.get('/*',toolbox.networkFirst,{networkTimeoutSeconds: 5});

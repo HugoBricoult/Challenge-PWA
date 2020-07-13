@@ -1,0 +1,7 @@
+{
+    "name":"Le Hublot",
+    "short_name": "Hub",
+    "lang":"fr",
+    "start_url":"/",
+    "display":"standalone"
+}
