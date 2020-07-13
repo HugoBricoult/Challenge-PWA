@@ -1,19 +1,20 @@
-importScripts('sw-toolbox.js')
-toolbox.precache([
-    'index.html',
-    '/assets/css/main.css',
-    '/images/banner.jpg',
-    '/images/branche.jpg',
-    '/images/carnaval.jpg',
-    '/images/membres.jpg',
-    '/images/nenu.jpg',
-    '/images/pic01.jpg',
-    '/images/pic02.jpg',
-    '/images/pic03.jpg',
-    '/images/pic04.jpg',
-    '/images/pic05.jpg',
-    '/images/sport1.jpg',
-    '/images/sport2.jpg',
-    '/images/sport3.jpg',
-]);
-toolbox.router.get('/*',toolbox.networkFirst,{networkTimeoutSeconds: 5});
+self.addEventListener('install', e => {
+    console.log('Install SW');
+    e.waitUntil(
+        caches.open('static').then(cache => {
+            return cache.addAll([
+                "./",
+            ]);
+        })
+    )
+});
+
+
+self.addEventListener('fetch', e => {
+    console.log("Intercepting fetch request for:" + e.request.url);
+    e.respondWith(
+        caches.match(e.request).then(response => {
+            return response || fetch(e.request);
+        })
+    );
+});
