@@ -7,12 +7,12 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "#",
+            "src": "https://www.materialui.co/materialIcons/action/android_black_192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "#",
+            "src": "https://lh3.googleusercontent.com/proxy/AAa4FuZE3J_qgYbvCkw-1e95IE_5PGTRIQ2gVSs4z9CUfZBobDTQUwGj31Pc1qmF84FIYTdFQJuZ1Pp5lrCknwz7K91JqqioH6UOImXobgsl2Ds8_UCEpS_DQIfJvCUGAhml5D2j3lAkVm4f7Gjp0ZbIDEGC3lWzcYM",
             "sizes": "512x512",
             "type": "image/png"
         }
