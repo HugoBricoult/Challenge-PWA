@@ -1,9 +1,9 @@
 {
-    "name": "ASBL",
-    "short_name": "ASBL",
+    "name": "Le Hublot",
+    "short_name": "Hublot",
     "start_url": ".",
-    "background_color": "#6dcdb1",
-    "theme_color": "#985578",
+    "background_color": "#ff2222",
+    "theme_color": "#ff2222",
     "display": "standalone",
     "icons": [
         {
